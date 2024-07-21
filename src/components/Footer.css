@@ -1,0 +1,76 @@
+/* src/components/Footer.css */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 14px;
+    color: #70757a;
+  }
+  
+  .footer-button {
+    background: none;
+    border: none;
+    color: #70757a;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px 15px;
+    margin: 0 5px;
+    position: relative;
+  }
+  
+  .footer-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #70757a;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-button:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-center {
+    flex-grow: 1;
+    justify-content: center;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      width: 100%;
+      justify-content: center;
+      margin: 5px 0;
+    }
+  
+    .footer-button {
+      padding: 5px 10px;
+      margin: 2px;
+    }
+  }

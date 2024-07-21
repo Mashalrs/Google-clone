@@ -1,0 +1,138 @@
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+  }
+  
+  .google-logo {
+    width: 350px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .search {
+    width: 100%;
+    max-width: 584px;
+  }
+  
+  .search-input-container {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 5px 8px;
+    margin-bottom: 18px;
+  }
+  
+  .search-input-container:hover {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+  }
+  
+  .search-icon {
+    color: #9aa0a6;
+    height: 20px;
+    width: 20px;
+    padding: 0 13px;
+  }
+  
+  .search-input {
+    flex: 1;
+    height: 34px;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .search-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mic-icon, .camera-icon {
+    height: 24px;
+    width: 24px;
+    margin: 0 8px;
+    cursor: pointer;
+  }
+  
+  .search-buttons {
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+  }
+  
+  .search-button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .search-button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+  }
+  
+  .lucky-button {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .lucky-text {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .lucky-button:hover .lucky-text {
+    transform: translateY(-100%);
+  }
+  
+  .lucky-button::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+  }
+  
+  .lucky-button:hover::after {
+    transform: translateY(-100%);
+  }
+  
+  .google-link {
+    margin-top: 20px;
+    color: #1a0dab;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .google-link:hover {
+    text-decoration: underline;
+  }
